@@ -1,0 +1,7 @@
+Aulas PHP:
+
+- primeiro é necessário intalar o XAMPP, onde o mesmo instala o php e o MySql
+- depois na pasta do mesmo é necessário acionar ele no painel para funcionar
+- para rodar um arquivo php é necessário criar uma pasta dentro dos arquivos do XAMPP  
+    - XAMPP -> htdocs -> "nome da pasta"
+    - dentro da pasta é necessário ter um arquivo index.php para ser a página principal do mesmo 
