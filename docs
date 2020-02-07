@@ -5,3 +5,25 @@ Aulas PHP:
 - para rodar um arquivo php é necessário criar uma pasta dentro dos arquivos do XAMPP  
     - XAMPP -> htdocs -> "nome da pasta"
     - dentro da pasta é necessário ter um arquivo index.php para ser a página principal do mesmo 
+
+- MySql:
+- acessar o link "http://localhost/phpmyadmin/"
+- AUTO_INCREMENT = o banco sempre adiciona um número que não está sendo utilizado no mesmo
+- not null = significa que não pode ser vazio o valor, se não preenchido retorna um erro
+- varchar -> necessário colocar a quantidade de caracteres, ele aceita até no máximo 255 car
+- chave primária -> é necessário descrever qual é para utilizar ela como a chave de relação entre tabelas
+- exemplo de query no MySql criando uma tabela de estoque:
+
+    create table estoque (
+        id_estoque int AUTO_INCREMENT,
+        nroproduto int not null,
+        nomeproduto varchar(200) not null,
+        categoria varchar(100) not null, 
+        quantidade int not null,
+        fornecedor varchar(100) not null,
+        PRIMARY KEY(id_estoque)
+    )
+
+- conexao.php:
+- arquivo onde é configurada a conexão do php com o banco de dados
+- é necessário ser incluida (include) dentro do arquivo onde será utilizada a interação com o banco
